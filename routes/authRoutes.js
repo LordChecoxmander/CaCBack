@@ -9,4 +9,7 @@ router.get("/usuario/:id", userController.getUserById);
 router.post("/usuario/update/:id", userController.updateUser);
 router.post("/usuario/delete/:id", userController.deleteUser);
 
+console.log("hola")
+
+
 module.exports = router

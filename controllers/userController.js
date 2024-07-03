@@ -47,6 +47,7 @@ const deleteUser = (req, res) =>{
 const getUserById = (req, res) =>{
     let {id} = req.params;
     let sql = `SELECT * FROM usuarios WHERE id = ?`
+    console.log("hola")
     db.query(sql, [id], (err, res)=>{
         if(err){
             console.error('error al obtener todos los usuarios: ', err);
